@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Okoa JUA website</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Linking Font Awesome for icons -->
+    <script
+      src="https://kit.fontawesome.com/2de799230c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo"><i class="fa-solid fa-solar-panel"></i></a>
+      <span class="jua">OKOA &#127774;<span class="juuu">JUA</span></span>
+    </header>
+    <nav class="nav-bar">
+      <div class="top">
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <i id="profile" class="fa-solid fa-user"></i>
+
+          <span id="loggedInUsername"></span>
+          <form class="search-form" id="search-form">
+            <input type="search" id="search-box" placeholder="Search Here..." />
+            <label for="search-box" class="fa fa-search"></label>
+          </form>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="icon-cart">
+          <svg
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 18 20"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"
+            />
+          </svg>
+          <span>0</span>
+        </div>
+        <div class="listProduct"></div>
+      </div>
+      <div class="cartTab">
+        <h1>Cart items</h1>
+        <div class="listCart"></div>
+        <div class="btn">
+          <button class="close">CLOSE</button>
+          <button class="checkOut">Check Out</button>
+          <!-- Inside the cart item -->
+
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Enter Phone Number and M-Pesa PIN</h2>
+              <input
+                class="pphone"
+                type="text"
+                id="phone-number"
+                placeholder="Enter your phone number"
+              />
+              <input
+                class="mpessa"
+                type="password"
+                id="mpesa-pin"
+                placeholder="Enter your M-Pesa PIN &#129763;"
+              />
+              <button id="confirm-pin">Confirm</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="loginContainer" class="login-container">
+        <span class="close">&times;</span>
+        <h2 class="loggg">Login</h2>
+        <form id="loginForm">
+          <input
+            class="user"
+            type="text"
+            placeholder="username"
+            id="username"
+          />
+          <input
+            class="passi"
+            type="password"
+            placeholder="Password"
+            id="password"
+          />
+          <button class="login" type="submit">Login</button>
+        </form>
+        <div id="greetingMessage"></div>
+      </div>
+      <div class="content">
+        <img class="solar1" src="images/solar1.jpeg" alt="Fruits Picture" />
+        <div class="text-content">
+          <p class="title1"> GO GREEN!</p>
+          <p class="paragraph">
+            Welcome to our e-commerce website, where convenience meets quality!
+            Dive into the world of cutting edge solar technology!
+            <span class="karibu">Karibu OKOA JUA</span>
+          </p>
+        </div>
+        <div class="ffeature" id="product">
+          <p class="our">Our <span class="features">Products</span></p>
+        </div>
+        <div class="card-container" id="product-container"></div>
+        <div class="Reviews" id="reviews">
+          <p class="our">Our <span class="features">Reviews</span></p>
+          <div class="reviews-container" id="reviews-container"></div>
+          <button class="revieww">Add review</button>
+          <div id="reviewFormContainer" class="review-form-container">
+            <span class="close">&times;</span>
+            <h2>Add Review</h2>
+            <div
+              id="submittedReviewContainer"
+              class="submitted-review-container"
+            >
+              <h3>Submitted Review:</h3>
+              <p>Username: <span id="submittedUsername"></span></p>
+              <p>Rating: <span id="submittedRating"></span></p>
+            </div>
+
+            <form id="reviewForm">
+              <label for="rating">Rating:</label>
+              <input
+                type="number"
+                id="rating"
+                name="rating"
+                min="1"
+                max="5"
+                required
+              /><br />
+              <label for="comment">Comment:</label>
+              <textarea id="comment" name="comment" rows="4" required></textarea
+              ><br />
+              <button type="submit">Submit Review</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="contact" id="contact">
+        <p class="our">Contact <span class="features">Us</span></p>
+        <div>
+          <p>
+            <i id="gramlogo" class="fa-brands fa-instagram"></i
+            ><span id="instag"> Instagram</span>
+          </p>
+          <p class="gram">@thee_OkoaJua</p>
+        </div>
+        <div>
+          <p>
+            <i id="gramlogo" class="fa-brands fa-facebook"></i
+            ><span id="instag"> Facebook</span>
+          </p>
+          <p class="gram">@thee_OkoaJua</p>
+        </div>
+        <div>
+          <p>
+            <i id="gramlogo" class="fa-solid fa-envelope"></i
+            ><span id="instag"> E-mail</span>
+          </p>
+          <p class="gram">OkoaJuacustomercare@gmail.com</p>
+        </div>
+        <div>
+          <p><i id="gramlogo" class="fa-brands fa-x-twitter"></i></p>
+          <p class="gram">@OkoaJua_</p>
+        </div>
+        <div>
+          <p><i id="gramlogo" class="fa-solid fa-phone"></i></p>
+          <p class="gram">0707499607</p>
+        </div>
+      </div>
+    </nav>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
