@@ -287,7 +287,31 @@ document.querySelector('.review-form-container .close').addEventListener('click'
   const reviewFormContainer = document.getElementById('reviewFormContainer');
   reviewFormContainer.style.display = 'none';
 });
+// Get references to the sun and moon icons
+const sunIcon = document.getElementById('moon');
+const moonIcon = document.getElementById('sunn');
 
+// Add event listener to the sun icon
+sunIcon.addEventListener('click', function() {
+  // Toggle dark mode class off
+  document.body.classList.remove('dark-mode');
+  // Toggle light mode class on
+  document.body.classList.add('light-mode');
+  // Change sun icon to moon icon
+  sunIcon.style.display = 'none';
+  moonIcon.style.display = 'inline-block';
+});
+
+// Add event listener to the moon icon
+moonIcon.addEventListener('click', function() {
+  // Toggle light mode class off
+  document.body.classList.remove('light-mode');
+  // Toggle dark mode class on
+  document.body.classList.add('dark-mode');
+  // Change moon icon to sun icon
+  moonIcon.style.display = 'none';
+  sunIcon.style.display = 'inline-block';
+});
 
 
 // Function to handle confirming the PIN

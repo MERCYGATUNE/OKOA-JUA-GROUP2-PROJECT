@@ -10,6 +10,8 @@ body {
     text-transform: capitalize;
 }
 
+
+
 .solar1 {
     margin-top: 90px;
 }
@@ -33,7 +35,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(0, 0, 0);
+    color: rgb(104, 102, 102);
     font-size: 18px;
     text-decoration: none;
     font-weight: 300;
@@ -52,12 +54,38 @@ nav ul li a:hover {
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0);
     backdrop-filter: blur(4px);
     box-shadow: 5px 0px 5px;
     margin-left: 390px;
     padding-left: 40px;
 }
+
+#moon {
+    font-size: 20px;
+    margin-left: 30px;
+    color: rgb(133, 133, 133);
+}
+
+#sunn {
+
+    font-size: 20px;
+    margin-left: 30px;
+    color: rgb(119, 119, 119);
+}
+
+
+.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+.dark-mode {
+    background-color: #000000;
+    color: #ffffff;
+}
+
 
 .top:hover {
     color: rgb(15, 235, 26);
@@ -75,7 +103,7 @@ nav ul li a:hover {
 
 .jua {
     font-size: 30px;
-    margin-left: 20px;
+    margin-left: 30px;
     font-weight: 500px;
     margin-top: 30px;
     position: fixed;
@@ -97,7 +125,7 @@ nav ul li a:hover {
 }
 
 #profile {
-    margin-left: 150px;
+    margin-left: 30px;
     background: rgba(0, 0, 0, 0);
     margin-top: -1000px;
 
@@ -117,6 +145,12 @@ nav ul li a:hover {
     background: rgb(19, 230, 177);
     color: white;
 }
+
+/* Hide the icon */
+.hidden {
+    display: none;
+}
+
 
 
 .paragraph {
@@ -157,6 +191,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     right: 1;
+    color: white;
 }
 
 .search-form input {
@@ -166,6 +201,7 @@ nav ul li a:hover {
     text-decoration: none;
     padding: 0 1.5rem;
     margin-top: 10px;
+    color: rgb(95, 95, 95);
 }
 
 .search-form input {
@@ -605,6 +641,7 @@ body.showCart .container {
 
 }
 
+
 .delete-button {
     border: 1px solid #ccc;
 
@@ -662,7 +699,7 @@ body.showCart .container {
 
 /* Styling for the login container */
 .login-container {
-    background-color: #fff;
+    background-color: #ffffff00;
     border-radius: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     overflow: hidden;
@@ -706,7 +743,8 @@ body.showCart .container {
 }
 
 .loggg {
-    margin-left: 200px;
+    margin-left: 100px;
+    color: rgb(21, 119, 231);
 }
 
 .revieww {
@@ -779,9 +817,9 @@ body.showCart .container {
     font-size: 28px;
     color: rgb(123, 123, 255);
     cursor: pointer;
+    margin-right: 120px;
 }
 
-/* like function */
-.red-heart {
-    color: red;
+#loggedInUsername {
+    margin-right: -10px;
 }
