@@ -151,8 +151,7 @@ nav ul li a:hover {
     top: 20%;
     margin-left: 620px;
     width: 16rem;
-    height: 2.5rem;
-    background: #ffffff00;
+    height: 3.5rem;
     border-radius: 0.5rem;
     overflow: hidden;
     display: flex;
@@ -161,20 +160,24 @@ nav ul li a:hover {
 }
 
 .search-form input {
-    height: 100%;
-    width: 100%;
+    height: 50%;
+    width: 80%;
     background: none;
     text-decoration: none;
-    color: var(--black);
     padding: 0 1.5rem;
+    margin-top: 10px;
 }
 
 .search-form input {
-    border: rgb(9, 226, 161);
+    border: rgba(9, 226, 161, 0);
 }
 
 .search-form label {
     cursor: pointer;
+}
+
+.checkOut {
+    width: 400px;
 }
 
 .search-form:active {
@@ -295,7 +298,7 @@ nav ul li a:hover {
     color: white;
     border-radius: 5px;
     padding-left: 10px;
-    margin-top: 20px;
+    margin-top: -10px;
     cursor: pointer;
 }
 
@@ -696,7 +699,7 @@ body.showCart .container {
     font-weight: 600;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    margin-top: 10px;
+    margin-top: 30px;
     cursor: pointer;
 
 

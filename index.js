@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.addEventListener('click', (event) => {
         if (event.target?.classList.contains('add-to-cart')) {
             const title = event.target.parentElement.querySelector('h3').textContent;
-            alert(`${title} added to cart successfully!`);
+            //alert(`${title} added to cart successfully!`);
         }
     });
 
