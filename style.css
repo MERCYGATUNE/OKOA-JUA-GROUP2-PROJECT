@@ -708,7 +708,7 @@ body.showCart .container {
     overflow: hidden;
     width: 300px;
     max-width: 120%;
-    min-height: 100px;
+    min-height: 90px;
     margin-left: 400px;
     margin-top: 20px;
 }
@@ -748,6 +748,7 @@ body.showCart .container {
 .loggg {
     margin-left: 100px;
     color: green;
+    margin-top: 120px;
 }
 
 .revieww {
