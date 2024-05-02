@@ -26,9 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
         card.appendChild(cardContent);
         return card;
     }
-
-    
-
     // Fetches data from 'db.json' for products
     fetch('db.json')
         .then(response => response.json())
