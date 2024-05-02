@@ -374,7 +374,10 @@ nav ul li a:hover {
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-left: 520px;
+    display: inline-block;
+    /* Display as inline-block */
+    margin-left: 10px;
+    /* Adjust the margin */
 }
 
 .review-card h3 {
@@ -383,7 +386,6 @@ nav ul li a:hover {
 
 .review-card p {
     margin-bottom: 5px;
-
 }
 
 #reviews {
@@ -416,13 +418,6 @@ nav ul li a:hover {
 }
 
 .review-card:hover {
-    width: 300px;
-    padding: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-left: 520px;
     background-color: rgb(13, 104, 241);
     color: white;
     transition: 0.9s;
