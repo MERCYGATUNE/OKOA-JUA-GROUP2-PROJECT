@@ -26,15 +26,12 @@ document.addEventListener("DOMContentLoaded", function () {
         card.appendChild(cardContent);
         return card;
     }
-
-    
-
     // Fetches data from 'db.json' for products
     fetch('db.json')
         .then(response => response.json())
         .then(data => {
             const productContainer = document.getElementById('product-container');
-            data.itemList.forEach(product => {
+            data.foodList.forEach(product => {
                 const card = createProductCard(product);
                 productContainer.appendChild(card);
             });
@@ -79,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.addEventListener('click', (event) => {
         if (event.target?.classList.contains('add-to-cart')) {
             const title = event.target.parentElement.querySelector('h3').textContent;
-            alert(`${title} added to cart successfully!`);
+            //alert(`${title} added to cart successfully!`);
         }
     });
 
@@ -266,7 +263,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
   const usernameInput = document.getElementById('username');
   const username = usernameInput.value.trim();
   // Displays an allert with the greeting messsage
- window.alert(`WELCOME ${username}👋 TO OKOA JUA 💛`);
+ window.alert(`welcome ${username}👋 to Okoa Jua 💛`);
   // Hides the loggin container
   loginContainer.style.display = 'none';
 
@@ -287,7 +284,31 @@ document.querySelector('.review-form-container .close').addEventListener('click'
   const reviewFormContainer = document.getElementById('reviewFormContainer');
   reviewFormContainer.style.display = 'none';
 });
+// Get references to the sun and moon icons
+const sunIcon = document.getElementById('moon');
+const moonIcon = document.getElementById('sunn');
 
+// Add event listener to the sun icon
+sunIcon.addEventListener('click', function() {
+  // Toggle dark mode class off
+  document.body.classList.remove('dark-mode');
+  // Toggle light mode class on
+  document.body.classList.add('light-mode');
+  // Change sun icon to moon icon
+  sunIcon.style.display = 'none';
+  moonIcon.style.display = 'inline-block';
+});
+
+// Add event listener to the moon icon
+moonIcon.addEventListener('click', function() {
+  // Toggle light mode class off
+  document.body.classList.remove('light-mode');
+  // Toggle dark mode class on
+  document.body.classList.add('dark-mode');
+  // Change moon icon to sun icon
+  moonIcon.style.display = 'none';
+  sunIcon.style.display = 'inline-block';
+});
 
 
 // Function to handle confirming the PIN
@@ -323,3 +344,4 @@ document.getElementById("confirm-pin").addEventListener('click', () => {
     }
     initApp();
 });
+

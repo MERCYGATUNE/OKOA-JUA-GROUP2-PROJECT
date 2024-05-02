@@ -39,8 +39,8 @@ nav ul li a {
     font-size: 20px;
     text-decoration: none;
     font-weight: 300;
-     display: block;
-     padding: 10px 10px;
+    display: block;
+    padding: 10px 10px;
 
 }
 
@@ -110,7 +110,7 @@ nav ul li a:hover {
     margin-top: 30px;
     position: fixed;
     z-index: 1000;
-    color:;
+    color: yellow;
     font-weight: bold;
 }
 
@@ -393,7 +393,7 @@ nav ul li a:hover {
 #gramlogo {
     font-size: 20px;
     font-weight: bold;
-    color:green;
+    color: green;
 }
 
 .contact {
@@ -412,7 +412,7 @@ nav ul li a:hover {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     margin-top: -20px;
-    
+
 }
 
 .review-card:hover {
@@ -564,7 +564,7 @@ body.showCart .container {
 }
 
 .cartTab button {
-    background-color:yellow;
+    background-color: yellow;
     border: none;
     font-family: Poppins;
     font-weight: 500;
@@ -747,7 +747,7 @@ body.showCart .container {
 
 .loggg {
     margin-left: 100px;
-    color:green;
+    color: green;
 }
 
 .revieww {
