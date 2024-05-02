@@ -36,9 +36,11 @@ nav ul li {
 
 nav ul li a {
     color: rgb(104, 102, 102);
-    font-size: 18px;
+    font-size: 20px;
     text-decoration: none;
     font-weight: 300;
+     display: block;
+     padding: 10px 10px;
 
 }
 
@@ -108,7 +110,7 @@ nav ul li a:hover {
     margin-top: 30px;
     position: fixed;
     z-index: 1000;
-    color: rgb(15, 236, 15);
+    color:;
     font-weight: bold;
 }
 
@@ -391,18 +393,18 @@ nav ul li a:hover {
 #gramlogo {
     font-size: 20px;
     font-weight: bold;
-    color: red;
+    color:green;
 }
 
 .contact {
-    margin-top: 300px;
     margin-top: 250px;
+    margin-top: 200px;
 }
 
 #instag {
     font-size: 20px;
     font-weight: bold;
-    color: red;
+    color: yellow;
 
 }
 
@@ -410,6 +412,7 @@ nav ul li a:hover {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     margin-top: -20px;
+    
 }
 
 .review-card:hover {
@@ -561,7 +564,7 @@ body.showCart .container {
 }
 
 .cartTab button {
-    background-color: #E8BC0E;
+    background-color:yellow;
     border: none;
     font-family: Poppins;
     font-weight: 500;
@@ -700,14 +703,14 @@ body.showCart .container {
 /* Styling for the login container */
 .login-container {
     background-color: #ffffff00;
-    border-radius: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.35);
     overflow: hidden;
-    width: 500px;
-    max-width: 160%;
-    min-height: 250px;
-    margin-left: 800px;
-    margin-top: 50px;
+    width: 300px;
+    max-width: 120%;
+    min-height: 100px;
+    margin-left: 400px;
+    margin-top: 20px;
 }
 
 .login-container h2 {
@@ -716,27 +719,27 @@ body.showCart .container {
 
 .login-container input,
 .login-container button {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .login-container .close {
     position: absolute;
-    top: 10px;
-    right: 20px;
+    top: 8px;
+    right: 10px;
     cursor: pointer;
 }
 
 .login {
-    background-color: #512da8;
+    background-color: green;
     color: #fff;
     font-size: 12px;
-    padding: 10px 45px;
+    padding: 12px 25px;
     border: 1px solid transparent;
-    border-radius: 8px;
+    border-radius: 5px;
     font-weight: 600;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    margin-top: 30px;
+    margin-top: 25px;
     cursor: pointer;
 
 
@@ -744,7 +747,7 @@ body.showCart .container {
 
 .loggg {
     margin-left: 100px;
-    color: rgb(21, 119, 231);
+    color:green;
 }
 
 .revieww {

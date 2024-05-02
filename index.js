@@ -266,7 +266,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
   const usernameInput = document.getElementById('username');
   const username = usernameInput.value.trim();
   // Displays an allert with the greeting messsage
- window.alert(`welcome ${username}👋 to Okoa Jua 💛`);
+ window.alert(`WELCOME ${username}👋 TO OKOA JUA 💛`);
   // Hides the loggin container
   loginContainer.style.display = 'none';
 
