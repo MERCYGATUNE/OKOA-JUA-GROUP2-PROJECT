@@ -330,8 +330,6 @@ document.getElementById("confirm-pin").addEventListener('click', () => {
         alert('Please enter a valid phone number and M-Pesa PIN.');
     }
 });
-
-
     // Function to initialize the app
     const initApp = () => {
         // Get data product
@@ -349,3 +347,4 @@ document.getElementById("confirm-pin").addEventListener('click', () => {
     }
     initApp();
 });
+
