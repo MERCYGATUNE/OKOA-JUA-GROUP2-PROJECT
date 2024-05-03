@@ -112,6 +112,7 @@ nav ul li a:hover {
     margin-top: 30px;
     position: fixed;
     z-index: 1000;
+    color: black;
     color: yellow;
     font-weight: bold;
 }
@@ -459,15 +460,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px 10px;
 }
 
 .icon-cart {
-    position: relative;
-    margin-left: 250px;
     margin-top: -30px;
     cursor: pointer;
-
+    position: absolute;
+    margin-left: 250px;
 }
 
 .icon-cart span {
@@ -480,9 +480,9 @@ header {
     align-items: center;
     border-radius: 50%;
     color: #fff;
-    top: 40%;
-    right: 0px;
-    margin-left: 400px;
+    top: 100%;
+    right: 0;
+
 
 }
 
