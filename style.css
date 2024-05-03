@@ -39,8 +39,8 @@ nav ul li a {
     font-size: 20px;
     text-decoration: none;
     font-weight: 300;
-     display: block;
-     padding: 10px 10px;
+    display: block;
+    padding: 10px 10px;
 
 }
 
@@ -111,6 +111,7 @@ nav ul li a:hover {
     position: fixed;
     z-index: 1000;
     color:black;
+    color: yellow;
     font-weight: bold;
 }
 
@@ -287,7 +288,7 @@ nav ul li a:hover {
 }
 
 .card:hover {
-    background: red;
+    background: rgb(217, 255, 0);
     color: white;
     transition: 0.9s ease-in-out;
 }
@@ -374,7 +375,10 @@ nav ul li a:hover {
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-left: 520px;
+    display: inline-block;
+    /* Display as inline-block */
+    margin-left: 10px;
+    /* Adjust the margin */
 }
 
 .review-card h3 {
@@ -383,7 +387,6 @@ nav ul li a:hover {
 
 .review-card p {
     margin-bottom: 5px;
-
 }
 
 #reviews {
@@ -393,7 +396,7 @@ nav ul li a:hover {
 #gramlogo {
     font-size: 20px;
     font-weight: bold;
-    color:green;
+    color: green;
 }
 
 .contact {
@@ -412,24 +415,17 @@ nav ul li a:hover {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     margin-top: -20px;
-    
+
 }
 
 .review-card:hover {
-    width: 300px;
-    padding: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-left: 520px;
-    background-color: red;
+    background-color: rgb(13, 104, 241);
     color: white;
     transition: 0.9s;
 }
 
 .search-match {
-    background-color: rgb(248, 52, 215);
+    background-color: rgb(49, 0, 184);
     transition: background-color 0.9s ease;
 }
 
@@ -565,7 +561,7 @@ body.showCart .container {
 }
 
 .cartTab button {
-    background-color:yellow;
+    background-color: yellow;
     border: none;
     font-family: Poppins;
     font-weight: 500;
@@ -709,7 +705,7 @@ body.showCart .container {
     overflow: hidden;
     width: 300px;
     max-width: 120%;
-    min-height: 100px;
+    min-height: 90px;
     margin-left: 400px;
     margin-top: 20px;
 }
@@ -748,7 +744,8 @@ body.showCart .container {
 
 .loggg {
     margin-left: 100px;
-    color:green;
+    color: green;
+    margin-top: 120px;
 }
 
 .revieww {
@@ -827,3 +824,47 @@ body.showCart .container {
 #loggedInUsername {
     margin-right: -10px;
 }
+.whatsapp-btn-container {
+    position: fixed;
+    right: 30px;
+    opacity: 0;
+    bottom: -50px;
+    padding: 24px;
+    animation: fade-up 1000ms forwards;
+    animation-delay: 1000ms;
+}
+
+@keyframes fade-up {
+    100% {
+        bottom: 24px;
+        opacity: 1;
+    }
+}
+
+.whatsapp-btn-container .whatsapp-btn {
+    font-size: 48px;
+    color: #25d366;
+    display: inline-block;
+    transition: all 400ms;
+}
+
+.whatsapp-btn-container .whatsapp-btn:hover {
+    transform: scale(1.2);
+}
+
+.whatsapp-btn-container span {
+    position: absolute;
+    top: 0;
+    left: 4px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #075e54;
+    transform: rotateZ(20deg) translateX(10px);
+    opacity: 0;
+    transition: all 400ms;
+}
+
+.whatsapp-btn-container .whatsapp-btn:hover + span {
+    transform: rotateZ(0deg) translateX(0px);
+    opacity: 1;
+} 
