@@ -252,7 +252,7 @@ nav ul li a:hover {
 }
 
 .card {
-    width: calc(34.33% - 20px);
+    width: calc(35.33% - 30px);
     height: 430px;
     background-color: #e7e7e7;
     border: 1px solid #ffffff;
@@ -263,6 +263,7 @@ nav ul li a:hover {
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    font-size: 20px;
 }
 
 .aaa {
@@ -378,9 +379,7 @@ nav ul li a:hover {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: inline-block;
-    /* Display as inline-block */
-    margin-left: 10px;
-    /* Adjust the margin */
+    margin-left: 10px;/
 }
 
 .review-card h3 {
@@ -464,10 +463,10 @@ header {
 }
 
 .icon-cart {
-    margin-top: -30px;
+    margin-top: -50px;
     cursor: pointer;
     position: absolute;
-    margin-left: 250px;
+    margin-left: 280px;
 }
 
 .icon-cart span {
@@ -566,6 +565,7 @@ body.showCart .container {
     font-family: Poppins;
     font-weight: 500;
     cursor: pointer;
+    margin: 10px;
 }
 
 .cartTab .close {
