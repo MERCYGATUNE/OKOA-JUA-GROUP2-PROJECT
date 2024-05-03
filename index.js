@@ -327,15 +327,25 @@ document.getElementById("confirm-pin").addEventListener('click', () => {
         alert('Please enter a valid phone number and M-Pesa PIN.');
     }
 });
-    // Function to initialize the app
+const okoaJuaTitle = document.getElementById('okoaJuaTitle');
+
+let lastScrollTop = 0;
+window.addEventListener("scroll", function() {
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    if (currentScroll > lastScrollTop) {
+        okoaJuaTitle.style.visibility = "hidden";
+    } else {
+        okoaJuaTitle.style.visibility = "visible";
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+});
+
     const initApp = () => {
-        // Get data product
         fetch('db.json')
             .then(response => response.json())
             .then(data => {
                 products = data.foodList;
-
-                // Get data cart from memory
                 if (localStorage.getItem('cart')) {
                     cart = JSON.parse(localStorage.getItem('cart'));
                     addCartToHTML();
