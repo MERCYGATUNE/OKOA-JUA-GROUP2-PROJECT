@@ -80,12 +80,14 @@ nav ul li a:hover {
 .light-mode {
     background-color: #ffffff;
     color: #000000;
+    transition: 1.9s;
 }
 
 
 .dark-mode {
     background-color: #000000;
     color: #ffffff;
+    transition: 0.9s;
 }
 
 
@@ -225,7 +227,7 @@ nav ul li a:hover {
 .our {
     text-align: center;
     font-size: 20px;
-    color: rgb(0, 0, 0);
+    color: rgb(121, 120, 120);
 }
 
 .features {
@@ -822,6 +824,7 @@ body.showCart .container {
 #loggedInUsername {
     margin-right: -10px;
 }
+
 .whatsapp-btn-container {
     position: fixed;
     right: 30px;
@@ -862,7 +865,7 @@ body.showCart .container {
     transition: all 400ms;
 }
 
-.whatsapp-btn-container .whatsapp-btn:hover + span {
+.whatsapp-btn-container .whatsapp-btn:hover+span {
     transform: rotateZ(0deg) translateX(0px);
     opacity: 1;
-} 
+}
