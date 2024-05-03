@@ -147,5 +147,124 @@
     "description": "in-stock",
     "amount": 420000
   }
-  ]
+  ],
+  "lights": 
+  [
+    {
+    "id": "1",
+    "title": "Jdian Solar Light",
+    "description": "in-stock",
+    "capacity": "100watts",
+    "Brightnes": "100watts",
+    "voltage": "12 volt",
+    "current": "13 amps",
+    "amount": "4000",
+    "image": "https://www.zeltrenewableenergy.co.ke/assets/images/products/1689626975.jpg"
+    },
+    {
+    "id": "2",
+    "title": "Jdian Solar",
+    "capacity": "200watts",
+    "Brightnes": "200watts",
+    "voltage": "12 volt",
+    "current": "13 amps",
+    "description": "in-stock",
+    "amount": "6000",
+    "image": "https://www.zeltrenewableenergy.co.ke/assets/images/products/1689627636.jpg"
+    },
+    {
+    "id": "3",
+    "title": "charge controler",
+    "capacity": "300watts",
+    "Brightnes": "300watts",
+    "voltage": "12 volt",
+    "current": "13 amps",
+    "description": "in-stock",
+    "amount": "8000",
+    "image": "https://cdn.shopify.com/s/files/1/0493/9834/9974/files/solar-charge-controller.jpg?v=1686108149"
+    },
+    {
+    "id": "4",
+    "title": "chandeliers ",
+    "capacity": "50watts",
+    "Brightnes": "50watts",
+    "voltage": "12 volt",
+    "current": "13 amps",
+    "description": "in-stock",
+    "amount": "10000",
+    "image": "https://www.zeltrenewableenergy.co.ke/assets/images/products/1696846422.png"
+    
+    },
+    {
+    
+    "id": "5",
+    "title": "High Bay ac ceiling light",
+    "capacity": "1000watts",
+    "Brightnes": "1000watts",
+    "voltage": "12 volt",
+    "current": "13 amps",
+    "description": "in-stock",
+    "amount": "7000",
+    "image": "https://www.zeltrenewableenergy.co.ke/assets/images/products/1696137652.png"
+    },
+    
+    {
+    "id": "6",
+    "title": "solar pannel",
+    "capacity": "300watts",
+    "Brightnes": "2000watts",
+    "voltage": "12 volt",
+    "current": "13 amps",
+    "description": "in-stock",
+    "amount": "13000",
+    "image": "https://www.zeltrenewableenergy.co.ke/assets/images/products/1689068926.jpg"
+    },
+    {
+    "id": "7",
+    "title": "solar wall light",
+    "capacity": "55 watts",
+    "Brightnes": "55 watts",
+    "voltage": "12 volt",
+    "current": "13 amps",
+    "description": "in-stock",
+    "amount": "5000",
+    "image": "https://www.zeltrenewableenergy.co.ke/assets/images/products/JV7IGLEpZPV6iuAXTYstz9fNGNUN2D.jpeg"
+    
+    
+    },
+    {
+    "id": "8",
+    "title": "solar wall lamp",
+    "capacity": "10 watts",
+    "Brightnes": "10 watts",
+    "voltage": "12 volt",
+    "current": "13 amps",
+    "description": "in-stock",
+    "amount": "2500",
+    "image": "https://www.zeltrenewableenergy.co.ke/assets/images/products/1691489977.png"
+    },
+    {
+    "id": "9",
+    "title": "solar battrey",
+    "capacity": "100 Ah",
+    "Brightnes": "high",
+    "voltage": "12 volt",
+    "current": "13 amps",
+    "description": "in-stock",
+    "amount": "10000",
+    "image": "https://www.zeltrenewableenergy.co.ke/assets/images/products/mfbatts.jpg"
+    },
+    {
+    "id": "10",
+    "title": "solar home kit",
+    "capacity": "30 watt",
+    "Brightnes": "high",
+    "voltage": "12 volt",
+    "current": "13 amps",
+    "description": "in-stock",
+    "amount": "10000",
+    "image": "https://www.zeltrenewableenergy.co.ke/assets/images/products/1691920932.png"
+    }
+    
+]
 }
