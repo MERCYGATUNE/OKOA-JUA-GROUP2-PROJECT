@@ -136,7 +136,8 @@ closeCart.addEventListener('click', () => {
 });
 
 
-  // Event listener for adding items to the cart
+ // Event listener for adding items to the cart
+// Event listener for adding items to the cart
 document.addEventListener('click', (event) => {
     if (event.target?.classList.contains('add-to-cart')) {
         const title = event.target.parentElement.querySelector('h3').textContent;
@@ -148,6 +149,8 @@ document.addEventListener('click', (event) => {
         }
     }
 });
+
+
 // Function to update the cart display
 const addCartToHTML = () => {
     listCartHTML.innerHTML = '';
@@ -353,16 +356,16 @@ window.addEventListener("scroll", function() {
 });
 
     const initApp = () => {
-        fetch('db.json')
-            .then(response => response.json())
-            .then(data => {
-                products = data.foodList;
-                if (localStorage.getItem('cart')) {
-                    cart = JSON.parse(localStorage.getItem('cart'));
-                    addCartToHTML();
-                }
-            })
-    }
-    initApp();
+    fetch('db.json')
+        .then(response => response.json())
+        .then(data => {
+            products = data.itemlist; // Change this to 'data.itemlist' to match the structure of your JSON data
+            if (localStorage.getItem('cart')) {
+                cart = JSON.parse(localStorage.getItem('cart'));
+                addCartToHTML();
+            }
+        })
+}
+initApp();
 });
 
