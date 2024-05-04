@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.json())
         .then(data => {
             const productContainer = document.getElementById('product-container');
-            data.foodList.forEach(product => {
+            data.itemlist.forEach(product => {
                 const card = createProductCard(product);
                 productContainer.appendChild(card);
             });
