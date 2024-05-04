@@ -40,6 +40,17 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         })
         .catch(error => console.error('Error fetching product data:', error));
+// Fetches data from 'db.json' for products lights 
+        fetch('db.json')
+        .then(response => response.json())
+        .then(data => {
+            const productContainer = document.getElementById('product-container');
+            data.lights.forEach(product => {
+                const card = createProductCard(product);
+                productContainer.appendChild(card);
+            });
+        })
+        .catch(error => console.error('Error fetching product data:', error));
 
     // Fetches data from 'reviews.json' for reviews
     const reviewsContainer = document.getElementById('reviews-container');
