@@ -34,7 +34,26 @@
     "username": "Andrew J",
     "rating":6,
     "comment": " After the National blackout  definitely mimi na KPLC nimeosha mkono 😌😂"
+  },
+  { "username": "Denis",
+    "rating": 5,
+    "comment": "Highly responsive products!"
+
+  },
+  {
+    "username": "Appy",
+    "rating": 4,
+    "comment": "There pricing is fair"
+  },
+  {
+    "username": "Lemmy",
+    "rating": 9,
+    "comment": "its my 3rd year with the product and it still serves me very well"
+  },
+  {
+    "username": "Victor okello",
+    "rating": 8,
+    "comment": "The floodlight didn't dissapoint me"
   }
-  
   ]
 }
