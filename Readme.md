@@ -3,7 +3,7 @@
 ## BY GROUP 2
 
 ## Description
-The project is about an e-commerce platform that deals with solar technology. Th rainy season has necessitated the demand for alternative energy sources .
+The project is about an e-commerce platform that deals with solar technology. The rainy season has necessitated the demand for alternative energy sources .
 ## Installation
 Use the git clone command to be download the documents in Github.
 ## Installation Requirements 
