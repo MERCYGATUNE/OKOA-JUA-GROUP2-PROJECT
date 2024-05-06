@@ -166,7 +166,7 @@ const addCartToHTML = () => {
 
         // Create delete button
         const deleteButton = document.createElement('button');
-        deleteButton.textContent = 'Remove from cart';
+        deleteButton.textContent = 'delete product';
         deleteButton.classList.add('delete-button');
         deleteButton.addEventListener('click', () => {
             removeItemFromCart(product);
@@ -192,7 +192,6 @@ const addCartToHTML = () => {
 const removeItemFromCart = (productToRemove) => {
     cart = cart.filter(product => product !== productToRemove);
 };
-
 
 // Function to update the count on the blue circle icon
 const updateCartCount = () => {
