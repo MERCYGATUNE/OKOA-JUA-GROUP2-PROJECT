@@ -60,7 +60,7 @@ nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0);
     backdrop-filter: blur(4px);
     box-shadow: 5px 0px 5px;
-    margin-left: 390px;
+    margin-left: 700px;
     padding-left: 40px;
 }
 
@@ -151,6 +151,10 @@ nav ul li a:hover {
     background: rgb(19, 230, 177);
     color: white;
 }
+#search-icon{
+    color: green;
+}
+
 
 /* Hide the icon */
 .hidden {
@@ -188,8 +192,8 @@ nav ul li a:hover {
 .search-form {
     border: 0px solid;
     position: absolute;
-    top: 20%;
-    margin-left: 620px;
+    top: 0%;
+    margin-left: -270px;
     width: 16rem;
     height: 3.5rem;
     border-radius: 0.5rem;
@@ -233,7 +237,7 @@ nav ul li a:hover {
 }
 
 .features {
-    background-color: rgb(40, 252, 234);
+    background-color: green;
     padding: 10px;
     border-radius: 5px 10px 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -253,7 +257,7 @@ nav ul li a:hover {
 }
 
 .card {
-    width: calc(35.33% - 30px);
+    width: calc(31.33% - 26px);
     height: 430px;
     background-color: #e7e7e7;
     border: 1px solid #ffffff;
@@ -264,7 +268,7 @@ nav ul li a:hover {
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1em;
 }
 
 .aaa {
@@ -274,12 +278,13 @@ nav ul li a:hover {
 }
 
 .user {
-    width: 350px;
+    width: 280px;
     margin-top: 10px;
+    
 }
 
 .passi {
-    width: 350px;
+    width: 280px;
     margin-top: 10px;
 }
 
@@ -472,7 +477,7 @@ header {
 
 .icon-cart span {
     position: absolute;
-    background-color: rgb(32, 149, 245);
+    background-color: green;
     width: 30px;
     height: 30px;
     display: flex;
@@ -707,8 +712,9 @@ body.showCart .container {
     width: 300px;
     max-width: 120%;
     min-height: 90px;
-    margin-left: 400px;
-    margin-top: 20px;
+    margin-left: 60px;
+    margin-top: 50px;
+    height: 220px;
 }
 
 .login-container h2 {
@@ -717,7 +723,7 @@ body.showCart .container {
 
 .login-container input,
 .login-container button {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
 
 .login-container .close {
@@ -737,7 +743,7 @@ body.showCart .container {
     font-weight: 600;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    margin-top: 25px;
+    margin-top: 20px;
     cursor: pointer;
 
 
@@ -746,7 +752,8 @@ body.showCart .container {
 .loggg {
     margin-left: 100px;
     color: green;
-    margin-top: 120px;
+    margin-top: 10px;
+    
 }
 
 .revieww {
