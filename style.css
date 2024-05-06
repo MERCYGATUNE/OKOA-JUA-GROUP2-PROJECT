@@ -60,7 +60,7 @@ nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0);
     backdrop-filter: blur(4px);
     box-shadow: 5px 0px 5px;
-    margin-left: 700px;
+    margin-left: 600px;
     padding-left: 40px;
 }
 
@@ -341,8 +341,8 @@ nav ul li a:hover {
 }
 
 .add-to-cart {
-    background-color:green;
-    color:white;
+    background-color: green;
+    color: white;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 20px;
@@ -445,7 +445,7 @@ nav ul li a:hover {
 }
 
 .stars {
-    color: gold;
+    color: rgb(231, 210, 15);
 }
 
 .stars span {
