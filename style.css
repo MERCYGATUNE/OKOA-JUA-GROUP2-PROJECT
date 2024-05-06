@@ -47,8 +47,9 @@ nav ul li a {
 nav ul li a:hover {
     color: rgb(33, 138, 236);
     transition: 0.7s;
-
 }
+
+
 
 .top {
     margin-right: -10px;
