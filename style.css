@@ -35,7 +35,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(104, 102, 102);
+    color: grey;
     font-size: 20px;
     text-decoration: none;
     font-weight: 300;
@@ -60,7 +60,7 @@ nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0);
     backdrop-filter: blur(4px);
     box-shadow: 5px 0px 5px;
-    margin-left: 500px;
+    margin-left: 700px;
     padding-left: 40px;
 }
 
@@ -203,7 +203,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     right: 1;
-    color: white;
+    color: green;
     border: none;
 }
 
@@ -219,7 +219,7 @@ nav ul li a:hover {
 
 .search-form input {
     border: none;
-    color: greenyellow;
+    color: grey;
 }
 
 .search-form label {
@@ -242,7 +242,7 @@ nav ul li a:hover {
 .our {
     text-align: center;
     font-size: 20px;
-    color: rgb(121, 120, 120);
+    color: grey;
 }
 
 .features {
