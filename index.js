@@ -26,23 +26,12 @@ document.addEventListener("DOMContentLoaded", function () {
         card.appendChild(cardContent);
         return card;
     }
-    // Fetches data from 'db.json' for products
+// Fetches data from 'db.json' for products
     fetch('db.json')
         .then(response => response.json())
         .then(data => {
             const productContainer = document.getElementById('product-container');
             data.itemlist.forEach(product => {
-                const card = createProductCard(product);
-                productContainer.appendChild(card);
-            });
-        })
-        .catch(error => console.error('Error fetching product data:', error));
-// Fetches data from 'db.json' for products lights 
-        fetch('db.json')
-        .then(response => response.json())
-        .then(data => {
-            const productContainer = document.getElementById('product-container');
-            data.lights.forEach(product => {
                 const card = createProductCard(product);
                 productContainer.appendChild(card);
             });
@@ -131,13 +120,11 @@ document.addEventListener("DOMContentLoaded", function () {
     // Function to close the cart
 
 closeCart.addEventListener('click', () => {
-    console.log('Close button clicked'); // Debugging statement
+    console.log('Close button clicked'); 
     body.classList.toggle('showCart');
 });
 
-
  // Event listener for adding items to the cart
-// Event listener for adding items to the cart
 document.addEventListener('click', (event) => {
     if (event.target?.classList.contains('add-to-cart')) {
         const title = event.target.parentElement.querySelector('h3').textContent;
@@ -191,7 +178,7 @@ const addCartToHTML = () => {
         listCartHTML.appendChild(cartItem);
 
         // Calculate total amount
-        totalAmount += product.amount;
+       totalAmount += product.amount;
     });
 
     // Append total bar to the cart
@@ -312,7 +299,6 @@ sunIcon.addEventListener('click', function() {
   sunIcon.style.display = 'none';
   moonIcon.style.display = 'inline-block';
 });
-
 // Add event listener to the moon icon
 moonIcon.addEventListener('click', function() {
   // Toggle light mode class off
@@ -323,8 +309,6 @@ moonIcon.addEventListener('click', function() {
   moonIcon.style.display = 'none';
   sunIcon.style.display = 'inline-block';
 });
-
-
 // Function to handle confirming the PIN
 document.getElementById("confirm-pin").addEventListener('click', () => {
     const phoneNumber = document.getElementById("phone-number").value;
