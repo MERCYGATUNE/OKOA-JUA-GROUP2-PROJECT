@@ -13,7 +13,8 @@ body {
 
 
 .solar1 {
-    margin-top: 90px;
+    display:block;
+    margin:0 auto;
 }
 
 nav ul li {
@@ -130,6 +131,7 @@ nav ul li a:hover {
     background: rgba(201, 180, 180, 0.493);
 }
 
+
 #profile {
     margin-left: 30px;
     background: rgba(0, 0, 0, 0);
@@ -165,8 +167,8 @@ nav ul li a:hover {
 
 .paragraph {
     width: 500px;
-    margin-left: 490px;
-    margin-top: 0px;
+    margin-left: 550px;
+    margin-top: 10px;
 }
 
 .karibu {
