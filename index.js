@@ -31,7 +31,18 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.json())
         .then(data => {
             const productContainer = document.getElementById('product-container');
-            data.foodList.forEach(product => {
+            data.itemlist.forEach(product => {
+                const card = createProductCard(product);
+                productContainer.appendChild(card);
+            });
+        })
+        .catch(error => console.error('Error fetching product data:', error));
+// Fetches data from 'db.json' for products lights 
+        fetch('db.json')
+        .then(response => response.json())
+        .then(data => {
+            const productContainer = document.getElementById('product-container');
+            data.lights.forEach(product => {
                 const card = createProductCard(product);
                 productContainer.appendChild(card);
             });
@@ -125,7 +136,8 @@ closeCart.addEventListener('click', () => {
 });
 
 
-  // Event listener for adding items to the cart
+ // Event listener for adding items to the cart
+// Event listener for adding items to the cart
 document.addEventListener('click', (event) => {
     if (event.target?.classList.contains('add-to-cart')) {
         const title = event.target.parentElement.querySelector('h3').textContent;
@@ -137,6 +149,8 @@ document.addEventListener('click', (event) => {
         }
     }
 });
+
+
 // Function to update the cart display
 const addCartToHTML = () => {
     listCartHTML.innerHTML = '';
@@ -327,21 +341,31 @@ document.getElementById("confirm-pin").addEventListener('click', () => {
         alert('Please enter a valid phone number and M-Pesa PIN.');
     }
 });
-    // Function to initialize the app
-    const initApp = () => {
-        // Get data product
-        fetch('db.json')
-            .then(response => response.json())
-            .then(data => {
-                products = data.foodList;
+const okoaJuaTitle = document.getElementById('okoaJuaTitle');
 
-                // Get data cart from memory
-                if (localStorage.getItem('cart')) {
-                    cart = JSON.parse(localStorage.getItem('cart'));
-                    addCartToHTML();
-                }
-            })
+let lastScrollTop = 0;
+window.addEventListener("scroll", function() {
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    if (currentScroll > lastScrollTop) {
+        okoaJuaTitle.style.visibility = "hidden";
+    } else {
+        okoaJuaTitle.style.visibility = "visible";
     }
-    initApp();
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+});
+
+    const initApp = () => {
+    fetch('db.json')
+        .then(response => response.json())
+        .then(data => {
+            products = data.itemlist; // Change this to 'data.itemlist' to match the structure of your JSON data
+            if (localStorage.getItem('cart')) {
+                cart = JSON.parse(localStorage.getItem('cart'));
+                addCartToHTML();
+            }
+        })
+}
+initApp();
 });
 
