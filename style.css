@@ -61,7 +61,7 @@ nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0);
     backdrop-filter: blur(4px);
     box-shadow: 5px 0px 5px;
-    margin-left: 700px;
+    margin-left: 500px;
     padding-left: 40px;
 }
 
@@ -101,10 +101,10 @@ nav ul li a:hover {
 .logo {
     color: rgb(0, 119, 255);
     font-size: 30px;
-    margin-left: 100px;
-    margin-bottom: 70px;
+    margin-top: -90px;
     z-index: 1000;
     position: fixed;
+    margin-left: 100px;
 }
 
 .jua {
@@ -153,7 +153,8 @@ nav ul li a:hover {
     background: rgb(19, 230, 177);
     color: white;
 }
-#search-icon{
+
+#search-icon {
     color: green;
 }
 
@@ -195,8 +196,8 @@ nav ul li a:hover {
     border: 0px solid;
     position: absolute;
     top: 0%;
-    margin-left: -270px;
-    width: 16rem;
+    margin-left: -190px;
+    width: 12rem;
     height: 3.5rem;
     border-radius: 0.5rem;
     overflow: hidden;
@@ -204,24 +205,27 @@ nav ul li a:hover {
     align-items: center;
     right: 1;
     color: white;
+    border: none;
 }
 
 .search-form input {
     height: 50%;
-    width: 80%;
+    width: 100%;
     background: none;
     text-decoration: none;
     padding: 0 1.5rem;
     margin-top: 10px;
-    color: rgb(95, 95, 95);
+    color: rgb(106, 238, 117);
 }
 
 .search-form input {
-    border: rgba(9, 226, 161, 0);
+    border: none;
+    color: greenyellow;
 }
 
 .search-form label {
     cursor: pointer;
+    border: none;
 }
 
 .checkOut {
@@ -232,6 +236,10 @@ nav ul li a:hover {
     right: 1;
 }
 
+#search-icon {
+    color: #25d366;
+}
+
 .our {
     text-align: center;
     font-size: 20px;
@@ -239,7 +247,7 @@ nav ul li a:hover {
 }
 
 .features {
-    background-color: green;
+    background-color: rgb(40, 252, 234);
     padding: 10px;
     border-radius: 5px 10px 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -282,7 +290,6 @@ nav ul li a:hover {
 .user {
     width: 280px;
     margin-top: 10px;
-    
 }
 
 .passi {
@@ -471,7 +478,7 @@ header {
 }
 
 .icon-cart {
-    margin-top: -50px;
+    margin-top: -30px;
     cursor: pointer;
     position: absolute;
     margin-left: 280px;
@@ -479,7 +486,7 @@ header {
 
 .icon-cart span {
     position: absolute;
-    background-color: green;
+    background-color: rgb(32, 149, 245);
     width: 30px;
     height: 30px;
     display: flex;
@@ -713,10 +720,9 @@ body.showCart .container {
     overflow: hidden;
     width: 300px;
     max-width: 120%;
-    min-height: 90px;
-    margin-left: 60px;
-    margin-top: 50px;
-    height: 220px;
+    min-height: 60px;
+    margin-left: 200px;
+    margin-top: 40px;
 }
 
 .login-container h2 {
@@ -745,7 +751,7 @@ body.showCart .container {
     font-weight: 600;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    margin-top: 20px;
+    margin-top: 49px;
     cursor: pointer;
 
 
@@ -754,8 +760,7 @@ body.showCart .container {
 .loggg {
     margin-left: 100px;
     color: green;
-    margin-top: 10px;
-    
+    margin-top: 20px;
 }
 
 .revieww {
@@ -832,7 +837,7 @@ body.showCart .container {
 }
 
 #loggedInUsername {
-    margin-right: -10px;
+    margin-left: 10px;
 }
 
 .whatsapp-btn-container {
